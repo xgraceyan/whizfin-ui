@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cursive {
+  font-family: "Ruthie", cursive;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.spacer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.spacer-md {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.btn-primary {
+  @apply bg-primary py-4 lg:px-20 px-12 rounded-full text-secondary drop-shadow-green hover:bg-secondary hover:text-primary hover:drop-shadow-none border-2 border-solid border-primary;
+}
+
+.btn-secondary {
+  @apply py-4 lg:px-20 px-12 rounded-full text-primary bg-secondary border-2 border-solid border-primary hover:text-secondary hover:bg-primary hover:drop-shadow-green;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transition: ease-in-out 0.25s;
+}
