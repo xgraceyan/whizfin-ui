@@ -8,7 +8,7 @@ function Footer() {
       <div className="mx-12 my-2">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <h1 className="text-center cursive text-white text-5xl lg:text-7xl">
                 whizfin
               </h1>
@@ -55,7 +55,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="#" className="hover:underline">
               WhizFin
             </a>
             . All Rights Reserved.
