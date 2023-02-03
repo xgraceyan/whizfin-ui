@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Navbar() {
   let [open, setOpen] = useState();
   return (
-    <nav className="bg-transparent">
+    <nav className="bg-transparent" data-aos="fade-down" data-aos-delay="100">
       <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-10">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -90,28 +90,35 @@ function Navbar() {
                   className="text-primary px-3 py-2 rounded-md text-sm font-medium font-bold"
                   aria-current="page"
                 >
-                  Dashboard
+                  Home
                 </a>
 
                 <a
                   href="#"
                   className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Team
+                  Who We Are
                 </a>
 
                 <a
                   href="#"
                   className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Projects
+                  Resources
                 </a>
 
                 <a
                   href="#"
                   className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Calendar
+                  Our Team
+                </a>
+
+                <a
+                  href="#"
+                  className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Contact
                 </a>
               </div>
             </div>
@@ -129,28 +136,35 @@ function Navbar() {
               className="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium"
               aria-current="page"
             >
-              Dashboard
+              Home
             </a>
 
             <a
               href="#"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Team
+              Who We Are
             </a>
 
             <a
               href="#"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Projects
+              Resources
             </a>
 
             <a
               href="#"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Calendar
+              Our Team
+            </a>
+
+            <a
+              href="#"
+              className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Contact
             </a>
           </div>
         ) : (
