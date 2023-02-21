@@ -65,20 +65,24 @@ function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <h1
+              <a
                 className="cursive block h-8 w-auto lg:hidden text-primary"
                 alt="Your Company"
                 style={{ fontSize: "2rem" }}
+                id="mobile-logo"
+                href="/"
               >
-                whizfin
-              </h1>
-              <h1
+                <h1>whizfin</h1>
+              </a>
+              <a
                 className="cursive hidden h-8 w-auto lg:block text-primary"
                 alt="Your Company"
                 style={{ fontSize: "2rem" }}
+                id="logo"
+                href="/"
               >
-                whizfin
-              </h1>
+                <h1>whizfin</h1>
+              </a>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -86,37 +90,37 @@ function Navbar() {
               <div className="flex space-x-4">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <a
-                  href="#"
-                  className="text-primary px-3 py-2 rounded-md text-sm font-medium font-bold"
+                  href="/"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                   aria-current="page"
                 >
                   Home
                 </a>
 
                 <a
-                  href="#"
-                  className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                  href="/who-we-are"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Who We Are
                 </a>
 
                 <a
-                  href="#"
-                  className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                  href="/articles"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Resources
+                  Articles
                 </a>
 
                 <a
-                  href="#"
-                  className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                  href="/our-team"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Our Team
                 </a>
 
                 <a
-                  href="#"
-                  className="text-accent  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                  href="/contact"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
                 </a>
