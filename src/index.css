@@ -44,3 +44,11 @@ h1 {
 .btn-accent:hover {
   transition: ease-in-out 0.25s;
 }
+
+.text-input-primary {
+  @apply bg-transparent border border-white placeholder:text-white text-sm rounded-lg block w-full p-2.5;
+}
+
+.text-input-dark {
+  @apply bg-transparent border border-primary placeholder:text-primary text-sm rounded-lg block w-full p-2.5;
+}

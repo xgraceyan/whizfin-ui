@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import { redirect, useNavigate } from "react-router";
+import { logOut } from "../store/actions/authActions";
 
-function Navbar() {
+function Navbar(props) {
   let [open, setOpen] = useState();
+  console.log("navbar loaded");
   return (
     <nav className="bg-transparent" data-aos="fade-down" data-aos-delay="100">
       <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-10">
@@ -112,6 +116,13 @@ function Navbar() {
                 </a>
 
                 <a
+                  href="/projects"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Projects
+                </a>
+
+                <a
                   href="/our-team"
                   className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
                 >
@@ -124,6 +135,37 @@ function Navbar() {
                 >
                   Contact
                 </a>
+
+                {props.auth.uid ? (
+                  <div className="text-accent ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-bold">
+                    Hi, {props.profile.firstName}!
+                    <a
+                      onClick={(e) => {
+                        e.preventDefault();
+                        props.logOut();
+                      }}
+                      className="text-accent cursor-pointer hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-bold"
+                    >
+                      (Log Out)
+                    </a>
+                  </div>
+                ) : (
+                  <div className="text-accent px-3 py-2 rounded-md text-sm font-bold">
+                    <a
+                      href="/signup"
+                      className="mr-4 hover:text-primary ease-in-out duration-200"
+                    >
+                      Sign Up
+                    </a>
+
+                    <a
+                      href="/login"
+                      className="hover:text-primary ease-in-out duration-200"
+                    >
+                      Log In
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -136,7 +178,7 @@ function Navbar() {
           <div className="space-y-1 px-2 pt-2 pb-3">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
             <a
-              href="#"
+              href="/"
               className="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium"
               aria-current="page"
             >
@@ -144,32 +186,61 @@ function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="/who-we-are"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Who We Are
             </a>
 
             <a
-              href="#"
+              href="/articles"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Resources
+              Articles
             </a>
 
             <a
-              href="#"
+              href="/projects"
+              className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Projects
+            </a>
+
+            <a
+              href="/our-team"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Our Team
             </a>
 
             <a
-              href="#"
+              href="/contact"
               className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
             </a>
+
+            {props.auth.uid ? (
+              <div className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-bold">
+                Hi, {props.profile.firstName}!
+                <a
+                  onClick={(e) => {
+                    e.preventDefault();
+                    props.logOut();
+                  }}
+                >
+                  (Log Out)
+                </a>
+              </div>
+            ) : (
+              <div className="text-primary hover:bg-accent hover:text-white block px-3 py-2 rounded-md text-base font-bold underline">
+                <a href="/signup" className="mr-4">
+                  Sign Up
+                </a>
+
+                <a href="/login">Log In</a>
+              </div>
+            )}
           </div>
         ) : (
           false
@@ -179,4 +250,17 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth,
+    profile: state.firebase.profile,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    logOut: () => dispatch(logOut()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
