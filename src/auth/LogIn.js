@@ -24,7 +24,7 @@ function LogIn(props) {
   }
   return (
     <div id="login-page">
-      <div id="navbar" className="-z-50">
+      <div id="navbar" className="z-50">
         <Navbar />
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1">
