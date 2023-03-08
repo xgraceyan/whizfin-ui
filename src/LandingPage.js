@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { FaUser, FaCheckCircle, FaWalking, FaUserTie } from "react-icons/fa";
 import Footer from "./components/Footer";
 import SignUpCard from "./components/SignUpCard";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -34,7 +35,9 @@ function LandingPage() {
             <button className="btn-secondary">
               <a href="/who-we-are">Learn More</a>
             </button>
-            <button className="btn-primary">Join</button>
+            <button className="btn-primary">
+              <a href="/signup">Join</a>
+            </button>
           </div>
           <div className="lg:py-16 md:py-12 py-10"></div>
         </div>

@@ -4,7 +4,7 @@ import { SiLinktree } from "react-icons/si";
 
 function Footer() {
   return (
-    <footer className="px-8 pb-2 p-4 bg-primary sm:p-6">
+    <footer className="px-8 pb-2 p-4 bg-primary sm:p-6 grid self-end">
       <div className="mx-12 my-2">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
