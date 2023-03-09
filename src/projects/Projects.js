@@ -21,10 +21,15 @@ function Projects() {
 
       <div className="content-center p-4 py-10 lg:px-28 md:px-10 px-16">
         <div
-          className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10"
+          className="grid lg:grid-cols-6 md:grid-cols-6 grid-cols-1 gap-10"
           data-aos="fade-up"
         >
-          <ProjectCard />
+          <div className="md:col-span-4">
+            <ProjectCard image={"project_photos/project_1.jpg"} id={1} />
+          </div>
+          <div className="md:col-span-2">
+            <ProjectCard image={"project_photos/project_2.jpg"} id={2} />
+          </div>
         </div>
       </div>
       <Footer />

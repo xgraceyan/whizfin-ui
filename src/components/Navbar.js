@@ -95,7 +95,7 @@ function Navbar(props) {
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <a
                   href="/"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                   aria-current="page"
                 >
                   Home
@@ -103,54 +103,54 @@ function Navbar(props) {
 
                 <a
                   href="/who-we-are"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
                   Who We Are
                 </a>
 
                 <a
                   href="/articles"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
                   Articles
                 </a>
 
                 <a
                   href="/projects"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
                   Projects
                 </a>
 
                 <a
                   href="/our-team"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
                   Our Team
                 </a>
 
                 <a
                   href="/contact"
-                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
                   Contact
                 </a>
 
                 {props.auth.uid ? (
-                  <div className="text-accent ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-bold">
+                  <div className="text-accent ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-bold">
                     Hi, {props.profile.firstName}!
                     <a
                       onClick={(e) => {
                         e.preventDefault();
                         props.logOut();
                       }}
-                      className="text-accent cursor-pointer hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md text-sm font-bold"
+                      className="text-accent cursor-pointer hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-bold"
                     >
                       (Log Out)
                     </a>
                   </div>
                 ) : (
-                  <div className="text-accent px-3 py-2 rounded-md text-sm font-bold">
+                  <div className="text-accent px-3 py-2 rounded-md lg:text-sm text-xs font-bold">
                     <a
                       href="/signup"
                       className="mr-4 hover:text-primary ease-in-out duration-200"
