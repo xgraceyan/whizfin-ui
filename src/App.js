@@ -13,6 +13,7 @@ import SignUp from "./auth/SignUp";
 import LogIn from "./auth/LogIn";
 import CreateArticle from "./articles/CreateArticle";
 import ArticlePage from "./articles/ArticlePage";
+import Database from "./Database";
 
 function App() {
   AOS.init();
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/login" element={<LogIn />}></Route>
         <Route exact path="/create-article" element={<CreateArticle />}></Route>
         <Route exact path="/article/:id" element={<ArticlePage />}></Route>
+        <Route exact path="/database" element={<Database />}></Route>
       </Routes>
     </BrowserRouter>
   );

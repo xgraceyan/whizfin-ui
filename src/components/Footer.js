@@ -58,7 +58,10 @@ function Footer() {
             <a href="#" className="hover:underline">
               WhizFin
             </a>
-            . All Rights Reserved.
+            . All Rights Reserved. &nbsp; | &nbsp; Website made by{" "}
+            <a href="https://www.graceyan.net" className="underline">
+              Grace Yan
+            </a>
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <span className="text-gray-200">Follow Us!</span>

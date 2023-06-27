@@ -123,6 +123,13 @@ function Navbar(props) {
                 </a>
 
                 <a
+                  href="/database"
+                  className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
+                >
+                  Database
+                </a>
+
+                <a
                   href="/our-team"
                   className="text-accent  hover:text-primary ease-in-out duration-200 px-3 py-2 rounded-md lg:text-sm text-xs font-medium"
                 >
