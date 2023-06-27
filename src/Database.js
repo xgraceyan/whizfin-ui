@@ -21,7 +21,7 @@ function Database() {
       <div className="content-center p-4 py-10 lg:px-28 md:px-10 px-16">
         <iframe
           style={{ position: "relative", height: "600px", width: "100%" }}
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRrnX7Bk3a7zkDZMlHl9YxbuwyptWL5GIIGXOk-gYdnjFbe97QcRK842WzDwgE8c8nq3oewzSBrUNbZ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTa74cjoRu5kuOq31DTu2Vvty9tBtqGYu1hkEuqK10IeKj-9-uOinmb3gAvqSTZNgaEBE99DiB5cBKJ/pubhtml?widget=true&amp;headers=false"
         ></iframe>
       </div>
       <Footer />
