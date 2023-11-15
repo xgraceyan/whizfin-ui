@@ -32,12 +32,12 @@ function LandingPage() {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <button className="btn-secondary">
-              <a href="/who-we-are">Learn More</a>
-            </button>
-            <button className="btn-primary">
-              <a href="/signup">Join</a>
-            </button>
+            <a className="btn-secondary" href="/who-we-are">
+              Learn More
+            </a>
+            <a className="btn-primary" href="/projects">
+              Our Projects
+            </a>
           </div>
           <div className="lg:py-16 md:py-12 py-10"></div>
         </div>
@@ -88,12 +88,11 @@ function LandingPage() {
               <div className="max-w-sm p-6 py-10">
                 <FaUserTie className="text-center text-6xl mb-5 block mx-auto text-accent" />
                 <h5 className="mb-5 text-2xl font-bold tracking-tight text-primary">
-                  Become
+                  Become an Expert
                 </h5>
                 <p className="font-normal text-primary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium necessitatibus obcaecati distinctio perferendis
-                  illum aperiam atque animi deserunt rem corporis.
+                  Learn about personal finance and life skills through our
+                  webinars and programs!
                 </p>
               </div>
             </div>

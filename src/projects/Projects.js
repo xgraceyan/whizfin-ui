@@ -25,10 +25,22 @@ function Projects() {
           data-aos="fade-up"
         >
           <div className="md:col-span-3">
-            <ProjectCard image={"project_photos/project_1.jpg"} id={1} />
+            <ProjectCard
+              image={"project_photos/webinar_1.jpg"}
+              id={1}
+              title="Financial Literacy Webinar"
+              date="20 JULY 2023"
+              text="WhizFin partnered up with VT Seva Bay Area to host a financial literacy webinar featuring Richa Basarkar, a finance and data science major at UIUC! In this webinar, we covered financial skills and how to manage funds in college."
+            />
           </div>
           <div className="md:col-span-2">
-            <ProjectCard image={"project_photos/project_2.jpg"} id={2} />
+            <ProjectCard
+              image={"project_photos/bake_sale.jpg"}
+              id={2}
+              title="Bake Sale!"
+              date="23 JULY 2023"
+              text="WhizFin held a bake sale raising nearly $300 to fund a scholarship for Evergreen Valley College! We sold cupcakes, loaves, brownies, and more!"
+            />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 export const ProjectCard = (props) => {
-  const { image, id } = props;
+  const { image, id, title, date, text } = props;
   return (
     <div className="rounded-lg">
       <div>
@@ -10,15 +10,9 @@ export const ProjectCard = (props) => {
         />
       </div>
       <div className="pt-4 text-right">
-        <h5 class="text-3xl font-bold tracking-tight text-primary">
-          Project #{id}
-        </h5>
-        <p className="uppercase text-accent mb-2">22 FEB 2023</p>
-        <p class="font-normal text-primary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          consequatur dolore ducimus maxime ex? Doloremque incidunt tempore nam
-          iure adipisci?
-        </p>
+        <h5 class="text-3xl font-bold tracking-tight text-primary">{title}</h5>
+        <p className="uppercase text-accent mb-2">{date}</p>
+        <p class="font-normal text-primary">{text}</p>
       </div>
     </div>
   );

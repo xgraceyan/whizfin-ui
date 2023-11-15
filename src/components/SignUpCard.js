@@ -9,10 +9,7 @@ function SignUpCard() {
           Sign up to become a member now!
         </h5>
         <p className="mb-10 text-base text-gray-500 sm:text-lg dark:text-gray-400">
-          Stay up to date with WhizFin news and Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Molestiae, ex. <br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
-          deserunt?
+          Stay up to date with WhizFin news and join our email list!
         </p>
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
           <a
